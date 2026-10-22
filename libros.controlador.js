@@ -1,5 +1,5 @@
 const db = require("../data/db");
-const { error, esTextoValido, esAñoValido, leerAño } = require("../utils/helpers");
+const { error, esTextoValido, esAñoValido, leerAño } = require("../utils/ayuda");
 
 const existeDuplicado = (titulo, autor, ignorarId = null) =>
   db.libros.some(
