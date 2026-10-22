@@ -1,12 +1,12 @@
-const { Router } = require("express");
-const librosRoutes = require("./libros.rutas");
-const prestamosRoutes = require("./prestamos.rutas");
-const estadisticasRoutes = require("./estadisticas.rutas");
+const { Ruta } = require("express");
+const librosRutas = require("./libros.rutas");
+const prestamosRutas = require("./prestamos.rutas");
+const estadisticasRutas = require("./estadisticas.rutas");
 
-const router = Router();
+const ruta = Ruta();
 
-router.use("/libros", librosRutas);
-router.use("/prestamos", prestamosRutas);
-router.use("/estadisticas", estadisticasRutas);
+ruta.use("/libros", librosRutas);
+ruta.use("/prestamos", prestamosRutas);
+ruta.use("/estadisticas", estadisticasRutas);
 
-module.exports = router;
+module.exports = ruta;
