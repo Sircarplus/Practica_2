@@ -1,5 +1,5 @@
 const express = require("express");
-const routes = require("../routes");
+const rutas = require("../routes");
 const { notFound, errorHandler1 } = require("../middlewares/errorHandler1");
 
 const app = express();
