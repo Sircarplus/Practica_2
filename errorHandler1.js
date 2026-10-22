@@ -1,4 +1,4 @@
-const { error } = require("../utils/helpers");
+const { error } = require("../utils/ayuda");
 
 function notFound(req, res) {
   error(res, 404, `Ruta no encontrada: ${req.method} ${req.originalUrl}`);
