@@ -1,5 +1,5 @@
 const db = require("../data/db");
-const { error, esTextoValido, hoy } = require("../utils/helpers");
+const { error, esTextoValido, hoy } = require("../utils/ayuda");
 
 const MAX_PRESTAMOS_POR_USUARIO = 2;
 
